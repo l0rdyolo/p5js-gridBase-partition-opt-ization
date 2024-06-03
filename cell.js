@@ -1,8 +1,6 @@
 class Cell {
     #maxParticleDistance;
     constructor(i, j, w, h) {
-        this.i = i;
-        this.j = j;
         this.x = i * w;
         this.y = j * h;
         this.w = w;
