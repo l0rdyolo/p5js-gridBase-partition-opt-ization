@@ -3,13 +3,24 @@
 
 bu projeyi Bilgisayar Mühendisliğinde Özel Konular dersi için geliştirdim.
 
+optimize edilmemiş                                              /                              optimize edilmiş 
 
 
-![555 particles without optimization](555nonOptim-particle.gif)
+![555 particles without optimization](555nonOptim-particle.gif) /                              ![555 particles  optimization](555-particle-optimz.gif)
 
 
-yukarıda optimize edilmemiş proje çıktısını görüyorsunuz.
-bazı sınıf açıklamarından sonra optimize halinin çıktısını da aşağıda bulabilirsiniz. 
+(mavi kutunun içindeki yazı fps :)))
+
+
+projemde çok sayıda particle ve her particle diğer tüm particlelar arasında distance kontrolü
+yapıp line çizip çizmeyeceğine karar veriyordu.
+bu da oldukça maliyetli bir işlem olup fps'de ciddi düşüşler yaşatıyordu
+
+bu problemi çözebilmek için canvas'ı grid'e bölüp bu griddeki her cell içerisinde bulununan 
+particlelar arasında distance kontrolü yapmak performansı arttığını gözlemledim
+aşağıda griddi nasıl parçaladığıma dair bir çıktı bulunuyor.
+
+<img src="gridpartition.png" alt="grid-partition" width="250"/>
 
 sınıf tanıtımlarında sözde kod yazılmıştır.
 ## sketch.js
@@ -140,4 +151,4 @@ class Grid {
     }
 }
 ```
-## optimized
+
