@@ -12,7 +12,7 @@ let particleManager; //manager for all particles in scene
 let fpsDisplayer;    //showing fps on the screen
 
 
-const particleCount = 555; //particle count 
+const particleCount = 555 ; //particle count 
 const particleDistance = 100; //distance between two particle for drawing line  
 const cellCount = 4; // we have a square canvas so we can use w and h same value -> this means canvas.w / cellCount = canvas.h/ cellCount 
 
