@@ -6,7 +6,7 @@ bu projeyi Bilgisayar Mühendisliğinde Özel Konular dersi için geliştirdim.
 optimize edilmemiş                                              /                              optimize edilmiş 
 
 
-![555 particles without optimization](555nonOptim-particle.gif) /                              ![555 particles  optimization](555-particle-optimz.gif)
+![555 particles without optimization](img/555nonOptim-particle.gif) /                              ![555 particles  optimization](img/555-particle-optimz.gif)
 
 
 (mavi kutunun içindeki yazı fps :)))
@@ -20,7 +20,7 @@ bu problemi çözebilmek için canvas'ı grid'e bölüp bu griddeki her cell iç
 particlelar arasında distance kontrolü yapmak performansı arttığını gözlemledim
 aşağıda griddi nasıl parçaladığıma dair bir çıktı bulunuyor.
 
-<img src="gridpartition.png" alt="grid-partition" width="250"/>
+<img src="img/gridpartition.png" alt="grid-partition" width="250"/>
 
 sınıf tanıtımlarında sözde kod yazılmıştır.
 ## sketch.js
