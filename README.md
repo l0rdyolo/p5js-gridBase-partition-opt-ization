@@ -5,7 +5,7 @@ bu projeyi Bilgisayar Mühendisliğinde Özel Konular dersi için geliştirdim.
 
 
 
-![555 particles without optimization]()
+![555 particles without optimization](555nonOptim-particle.gif)
 
 
 yukarıda optimize edilmemiş proje çıktısını görüyorsunuz.
