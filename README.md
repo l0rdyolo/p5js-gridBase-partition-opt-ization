@@ -1,28 +1,20 @@
+# p5.js | grid tabanlı bölümleme optimizasyonu
 
-# p5.js | grid-based partitioning optimization
+Bu projeyi Bilgisayar Mühendisliğinde Özel Konular dersi için geliştirdim.
 
-bu projeyi Bilgisayar Mühendisliğinde Özel Konular dersi için geliştirdim.
+optimize edilmemiş                                            /                              optimize edilmiş 
 
-optimize edilmemiş                                              /                              optimize edilmiş 
+![555 particles without optimization](img/555nonOptim-particle.gif) / ![555 particles optimization](img/555-particle-optimz.gif)
 
+(mavi kutunun içindeki yazı fps :))
 
-![555 particles without optimization](img/555nonOptim-particle.gif) /                              ![555 particles  optimization](img/555-particle-optimz.gif)
+Projemde çok sayıda particle ve her particle diğer tüm particle'lar arasında mesafe kontrolü yapıp çizgi çizip çizmeyeceğine karar veriyordu. Bu da oldukça maliyetli bir işlem olup fps'de ciddi düşüşler yaşatıyordu.
 
-
-(mavi kutunun içindeki yazı fps :)))
-
-
-projemde çok sayıda particle ve her particle diğer tüm particlelar arasında distance kontrolü
-yapıp line çizip çizmeyeceğine karar veriyordu.
-bu da oldukça maliyetli bir işlem olup fps'de ciddi düşüşler yaşatıyordu
-
-bu problemi çözebilmek için canvas'ı grid'e bölüp bu griddeki her cell içerisinde bulununan 
-particlelar arasında distance kontrolü yapmak performansı arttığını gözlemledim
-aşağıda griddi nasıl parçaladığıma dair bir çıktı bulunuyor.
+Bu problemi çözebilmek için canvas'ı grid'e bölüp bu griddeki her hücre içinde bulunan particle'lar arasında mesafe kontrolü yapmak performansı artırdığını gözlemledim. Aşağıda grid'i nasıl parçaladığıma dair bir çıktı bulunuyor.
 
 <img src="img/gridpartition.png" alt="grid-partition" width="250"/>
 
-sınıf tanıtımlarında sözde kod yazılmıştır.
+Sınıf tanıtımlarında sözde kod yazılmıştır.
 ## sketch.js
 
 
